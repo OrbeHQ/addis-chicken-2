@@ -1,0 +1,176 @@
+P0 script kills: 39
+P0 metricool links: 1
+P0 _next links: 9
+P0 route announcer: 1
+P0 vercel insights: 0  <<< MISS
+P0 vercel insights final: 1
+P0 awwwards badge div: 1
+P1 title: 1
+P1 lang: 1
+P1 og/tw title: 2
+P1 desc metas: 3
+P1 canonical: 1
+P1 og url refs: 1
+P1 hidden h1: 1
+P1 site name: 1
+P1 locale: 1
+P1 og image: 2
+P1 og image alt: 1
+P1 hreflang links: 3
+P1 favicon: 1
+P2 font AktivGroteskEx_Trial_R x1
+P2 font AktivGrotesk_Trial_Lt- x1
+P2 font AktivGrotesk_Trial_Rg- x1
+P2 font AwesomeSerifItalic_Reg x1
+P2 css links: 0  <<< MISS
+P2 font preload links: 0  <<< MISS
+P2 inline css: 1
+P3 body strip: 1
+P3 smooth wrapper: 1
+P3 smooth content: 1
+P3 pin spacers: 1
+P3 hero section: 1
+P3 panel container styles: 0  <<< MISS
+P3 gsap translate reveal strips: 20
+P3 reveal left strips: 1
+P3 reveal right strips: 1
+P3 strip sedes clip: 1
+P4 brand aria: 1
+P4 logo svg: 1
+P4 nosotros: 5
+P4 proyectos: 5
+P4 prensa: 5
+P4 servicios: 5
+P4 contacto: 5
+P4 inicio: 2
+P4 href studio: 4
+P4 href projects: 4
+P4 href press: 4
+P4 href services: 3
+P4 href contact: 3
+P4 bare /es: 5
+P5 hero year: 1
+P5 hero title text: 2
+P5 hero desc: 1
+P5 hero cta: 3
+P5 hero next: 3
+P6 studio title A: 1
+P6 studio title B: 1
+P6 studio desc1: 1
+P6 studio desc2: 1
+P6 studio cta: 3
+P6 sede 1: 1
+P6 sede 2: 1
+P6 sede 3: 1
+P7 proj title A: 1
+P7 proj title B: 1
+P7 projects cta: 3
+P7 ver mas: 6
+P7 name Casa Decor x Dos Latitudes: 0  <<< MISS
+P7 name alt Casa Decor x Dos Latitudes: 1
+P7 name Punta Mar: 1
+P7 name alt Punta Mar: 1
+P7 name Salesas : 1
+P7 name alt Salesas : 1
+P7 name Irimaka: 1
+P7 name alt Irimaka: 1
+P7 name Ph Makaira: 1
+P7 name alt Ph Makaira: 1
+P7 name Casa NJ: 1
+P7 name alt Casa NJ: 1
+P7 name Casa Decor x Dos Latitudes: 0  <<< MISS
+P7 name alt Casa Decor x Dos Latitudes: 0  <<< MISS
+P7 name Punta Mar: 0  <<< MISS
+P7 name alt Punta Mar: 0  <<< MISS
+P7 name Salesas : 0  <<< MISS
+P7 name alt Salesas : 0  <<< MISS
+P7 name Irimaka: 0  <<< MISS
+P7 name alt Irimaka: 0  <<< MISS
+P7 name Ph Makaira: 0  <<< MISS
+P7 name alt Ph Makaira: 0  <<< MISS
+P7 name Casa NJ: 0  <<< MISS
+P7 name alt Casa NJ: 0  <<< MISS
+P7 year tags x6
+P7 types x6
+P7 locations x6
+P8 proc title A: 1
+P8 proc title B: 1
+P8 step 1a: 1
+P8 step 2a: 1
+P8 step 3a: 1
+P8 step 4a: 1
+P8 step arch x3: 3
+P8 step4b: 1
+P8 step desc: 1
+P8 step alts: 4
+P9 press title: 1
+P9 press cta: 3
+P9 press read: 18
+P9 press mag A: 2
+P9 press mag B: 2
+P9 press lead: 2
+P9 press tag digital: 4
+P9 press tag sep: 2
+P9 press mx: 2
+P9 press la: 2
+P9 press mayo: 4
+P9 press premio: 2
+P9 press extra: 2
+P9 press angeles: 2
+P9 press barberia: 2
+P9 press casa: 2
+P9 press decor: 2
+P9 press casadecor text: 2
+P9 press awards: 2
+P9 press excerpts: 3
+P9 press alt sweep: 4
+P9 press title alts: 2
+P9 signature link: 2
+P9 ig post links: 4
+P9 zone sideAfterTitle: 0  <<< MISS
+P9 zone sideAfterDescription: 0  <<< MISS
+P9 zone sideAfterPublisher: 0  <<< MISS
+P9 zone sideAfterDate: 0  <<< MISS
+P9 zone sideAfterLink: 0  <<< MISS
+P9 curly doslatitudes span: 2
+P9 press paragraph sweep: 9
+P10 footer title A: 1
+P10 footer title B: 1
+P10 footer contact: 1
+P10 footer send: 1
+P10 footer col brand: 1
+P10 footer col social: 1
+P10 footer ig link: 1
+P10 footer li link: 1
+P10 footer li label: 1
+P10 footer copyright: 1
+P10 footer credit: 1
+P10 nea href: 1
+P10 footer intro A: 0  <<< MISS
+P10 locale toggle processed x0
+P10 locale separators stripped
+P11 hero/card1: 20
+P11 card1 hover: 10
+P11 studio mobile: 9
+P11 studio desktop: 9
+P11 card2 main: 20
+P11 card2 hover: 10
+P11 card3 main: 20
+P11 card3 hover: 10
+P11 card4 main: 20
+P11 card4 hover: 10
+P11 card5 a: 20
+P11 card5 b: 10
+P11 card6 main: 20
+P11 card6 hover: 10
+P11 process 1: 10
+P11 process 2: 10
+P11 process 3: 10
+P11 process 4: 10
+P11 hero bg inline: 1
+P11 catch-all image sweep: 219
+P11 /api/media leftovers: 0  <<< MISS
+ASSERT: zero template leftovers
+MARKERS: 25/25
+COUNTS {"sections":6,"imgs":48,"scripts":1,"styles":1,"docs":1}
+WROTE C:/Users/anani/Playground/addis-chicken-2/index.pretty.html (1327482 bytes)

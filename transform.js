@@ -52,17 +52,17 @@ repRe(/<script[^>]*src="\/_vercel\/insights[^"]*"[^>]*><\/script>\n?/g, () => ''
 repRe(/[ \t]*<div id="awwwards"[^>]*>[\s\S]*?<\/a>\s*<\/div>/g, () => '', 'P0 awwwards badge div');
 
 // ============================ P1 — head meta ============================
-rep('<title>Arquitectura e interiorismo</title>', '<title>Addis Chicken | Farm-Fresh Poultry in Addis Ababa</title>', 'P1 title');
+rep('<title>Arquitectura e interiorismo</title>', '<title>My Chicken Addis | Modern & Profitable Poultry Farming in Ethiopia</title>', 'P1 title');
 rep('<html lang="es" style="touch-action: pan-x pinch-zoom; scroll-behavior: auto;">', '<html lang="en">', 'P1 lang');
-rep('content="Arquitectura e interiorismo"', 'content="Addis Chicken | Farm-Fresh Poultry"', 'P1 og/tw title');
-repRe(/content="Estudio de arquitectura e interiorismo[^"]*"/g, () => 'content="Vertically integrated Ethiopian poultry: our own farm, our own processing, fresh chicken every day at our Bole outlet."', 'P1 desc metas');
+rep('content="Arquitectura e interiorismo"', 'content="My Chicken Addis | Modern & Profitable Poultry Farming in Ethiopia"', 'P1 og/tw title');
+repRe(/content="Estudio de arquitectura e interiorismo[^"]*"/g, () => 'content="Your trusted guide for modern, healthy, and profitable poultry farming in Ethiopia. Practical training, modern 4-tier cage systems, feed formulation, and farm consultation."', 'P1 desc metas');
 repRe(/<link rel="canonical" href="https:\/\/tarqstudio\.com\/es"[^>]*>/g, () => '<link rel="canonical" href="https://addis-chicken.vercel.app/">', 'P1 canonical');
 repRe(/content="https:\/\/tarqstudio\.com\/es"/g, () => 'content="https://addis-chicken.vercel.app/"', 'P1 og url refs');
-rep('<h1 class="visually-hidden">Arquitectura e interiorismo</h1>', '<h1 class="visually-hidden">Addis Chicken — farm-fresh poultry in Addis Ababa</h1>', 'P1 hidden h1');
-rep('content="TARQ"', 'content="Addis Chicken"', 'P1 site name');
+rep('<h1 class="visually-hidden">Arquitectura e interiorismo</h1>', '<h1 class="visually-hidden">My Chicken Addis — practical poultry training in Addis Ababa</h1>', 'P1 hidden h1');
+rep('content="TARQ"', 'content="My Chicken Addis"', 'P1 site name');
 rep('content="es_ES"', 'content="en_US"', 'P1 locale');
 rep('content="https://tarqstudio.com/tarq-architecture-studio.avif"', 'content="https://addis-chicken.vercel.app/assets/careerBox.jpg"', 'P1 og image');
-rep('content="TARQ Architecture and Interior Design"', 'content="Addis Chicken - farm-fresh poultry in Addis Ababa"', 'P1 og image alt');
+rep('content="TARQ Architecture and Interior Design"', 'content="My Chicken Addis - practical poultry training, cage systems, feed formulation"', 'P1 og image alt');
 repRe(/[ \t]*<link rel="alternate"[^>]*>\n?/g, () => '', 'P1 hreflang links');
 repRe(/[ \t]*<link rel="icon" href="\/favicon\.svg"[^>]*>\n?/g, () => '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23161a1b%27/%3E%3Ccircle cx=%2744%27 cy=%2744%27 r=%274%27 fill=%27%23E2572E%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-style=%27italic%27 font-weight=%27700%27 font-size=%2730%27 text-anchor=%27middle%27 fill=%27%23F2EFE4%27%3EAC%3C/text%3E%3C/svg%3E">\n', 'P1 favicon');
 
@@ -84,7 +84,7 @@ FONTMAP.forEach(([remote, local, ext]) => {
 repRe(/[ \t]*<link rel="stylesheet" href="\/_next\/static\/chunks\/[^"]*\.css"[^>]*>\n?/g, () => '', 'P2 css links');
 repRe(/[ \t]*<link rel="preload"[^>]*href="\/_next\/static\/media\/[^"]*"[^>]*>\n?/g, () => '', 'P2 font preload links');
 const BRAND_CSS = [
-  '/* Addis Chicken brand layer */',
+  '/* My Chicken Addis brand layer */',
   '#mobile-menu-overlay[aria-hidden="false"]{opacity:1!important;pointer-events:auto!important;visibility:visible!important}',
   '#mobile-menu-overlay[aria-hidden="true"]{opacity:0!important;pointer-events:none!important}',
   'a[href^="#"],.hero-next-project{cursor:pointer}',
@@ -111,13 +111,13 @@ repRe(/ style="transform: translateX\(100%\);"/g, () => '', 'P3 reveal right str
 repRe(/ style="clip-path: inset\(0px 100% 0px 0px\);"/g, () => '', 'P3 strip sedes clip');
 
 // ============================ P4 — nav + brand ============================
-rep('aria-label="TARQ, inicio"', 'aria-label="Addis Chicken, home"', 'P4 brand aria');
+rep('aria-label="TARQ, inicio"', 'aria-label="My Chicken Addis, home"', 'P4 brand aria');
 repRe(/<svg width="43" height="48" viewBox="0 0 43 48" fill="none" xmlns="http:\/\/www\.w3\.org\/2000\/svg">[\s\S]*?<\/svg>/,
   () => '<svg width="43" height="48" viewBox="0 0 43 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><text x="1" y="21" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="16">ADDIS</text><text x="1" y="42" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="16">CHICKEN</text></svg>', 'P4 logo svg');
-repT('Nosotros', 'Our Story', 'P4 nosotros');
-repT('Proyectos', 'The Menu', 'P4 proyectos');
+repT('Nosotros', 'Overview', 'P4 nosotros');
+repT('Proyectos', 'Cohorts', 'P4 proyectos');
 repT('Prensa', 'Stories', 'P4 prensa');
-repT('Servicios', 'Our Process', 'P4 servicios');
+repT('Servicios', 'Pathway', 'P4 servicios');
 repT('Contacto', 'Contact', 'P4 contacto');
 repT('Inicio', 'Home', 'P4 inicio');
 // nav hrefs -> anchors
@@ -129,33 +129,33 @@ rep('href="/es/contact"', 'href="#contact"', 'P4 href contact');
 rep('href="/es"', 'href="#top"', 'P4 bare /es');
 
 // ============================ P5 — hero ============================
-rep('<span class="hero-year">2026</span>', '<span class="hero-year">Fresh today</span>', 'P5 hero year');
-rep('>Casa Decor x Dos Latitudes<', '>Crispy Legs &amp; Thighs<', 'P5 hero title text');
-repT('TARQ es un estudio de arquitectura y diseño que entiende cada proyecto como una experiencia por construir, no sólo como un objeto terminado.', 'Addis Chicken is a vertically integrated poultry house — every bird from our own farm and plants to the plate in front of you.', 'P5 hero desc');
-repT('Ver Proyecto', 'See the Menu', 'P5 hero cta');
-repT('Siguiente proyecto', 'Next fresh item', 'P5 hero next');
+rep('<span class="hero-year">2026</span>', '<span class="hero-year">Next batch: open</span>', 'P5 hero year');
+rep('>Casa Decor x Dos Latitudes<', '>Weekend Poultry Intensive<', 'P5 hero title text');
+repT('TARQ es un estudio de arquitectura y diseño que entiende cada proyecto como una experiencia por construir, no sólo como un objeto terminado.', 'My Chicken Addis is a practical poultry training farm — protocols, cage systems, feed formulation, and financing for profitable Ethiopian flocks.', 'P5 hero desc');
+repT('Ver Proyecto', 'Enroll Now', 'P5 hero cta');
+repT('Siguiente proyecto', 'Next cohort', 'P5 hero next');
 
 // ============================ P6 — studio section ============================
-rep('>THE<', '>ADDIS<', 'P6 studio title A');
-rep('>STUDIO<', '>CHICKEN<', 'P6 studio title B');
-repT('Un estudio de arquitectura e interiorismo que transforma espacios y diseña experiencias.', 'A poultry house that raises, processes, and serves chicken its own way — one chain, all ours.', 'P6 studio desc1');
-repT('Desarrollamos proyectos que expresan funcionalidad y dinamismo, personificando a nuestros clientes en cada trazo del plano.', 'From our farm (SW Poultry) through processing (FW Agro) to the Bole counter — freshness is managed, not promised.', 'P6 studio desc2');
-repT('Conoce nuestro estudio', 'Visit our outlet', 'P6 studio cta');
-repT('Bogotá', 'The Farm', 'P6 sede 1');
-repT('Madrid', 'The Plant', 'P6 sede 2');
-repT('Miami', 'Bole Outlet', 'P6 sede 3');
+rep('>THE<', '>THE<', 'P6 studio title A');
+rep('>STUDIO<', '>FARM<', 'P6 studio title B');
+repT('Un estudio de arquitectura e interiorismo que transforma espacios y diseña experiencias.', 'A poultry training farm grounded in real flock management — brooding, cages, feed, and market.', 'P6 studio desc1');
+repT('Desarrollamos proyectos que expresan funcionalidad y dinamismo, personificando a nuestros clientes en cada trazo del plano.', 'From day-old chick brooding to 4-tier cage setups and local feed formulation — every protocol is field-tested at our Addis Ababa farm.', 'P6 studio desc2');
+repT('Conoce nuestro estudio', 'Book a site visit', 'P6 studio cta');
+repT('Bogotá', 'Megenagna Center', 'P6 sede 1');
+repT('Madrid', '400-Bird Units', 'P6 sede 2');
+repT('Miami', '1,500+ Trained', 'P6 sede 3');
 
 // ============================ P7 — projects -> menu highlights ============
-rep('>PROYECTOS<', '>MENU<', 'P7 proj title A');
-rep('>DESTACADOS<', '>HIGHLIGHTS<', 'P7 proj title B');
-repT('Explora todos los proyectos', 'See the full menu', 'P7 projects cta');
+rep('>PROYECTOS<', '>COHORTS<', 'P7 proj title A');
+rep('>DESTACADOS<', '>&amp; INTAKES<', 'P7 proj title B');
+repT('Explora todos los proyectos', 'See all intakes', 'P7 projects cta');
 repT('Ver más', 'View', 'P7 ver mas');
-const CARD = [['Casa Decor x Dos Latitudes', 'Crispy Legs & Thighs', 'Counter-fresh'],
-  ['Punta Mar', 'Whole Broilers', 'Farm-raised'],
-  ['Salesas ', 'Fresh Fillets', 'Same-day'],
-  ['Irimaka', 'Marinated Packs', 'Marinated'],
-  ['Ph Makaira', 'Wings & Drums', 'Family pack'],
-  ['Casa NJ', 'Party Trays', 'Catering']];
+const CARD = [['Casa Decor x Dos Latitudes', 'Weekend Intensive', '3 days'],
+  ['Punta Mar', 'Commercial Masterclass', '4 weeks'],
+  ['Salesas ', '4-Tier Cage Setup', 'Turnkey'],
+  ['Irimaka', 'Feed Formulation', '30% savings'],
+  ['Ph Makaira', 'Broiler Production', 'Meat birds'],
+  ['Casa NJ', 'Farm Financing', 'Start or expand']];
 CARD.forEach(([from, to, tag]) => {
   repT(from, to, 'P7 name ' + from);
   rep('alt="' + from + '"', 'alt="' + to + '"', 'P7 name alt ' + from);
@@ -165,7 +165,7 @@ CARD.forEach(([from, to, tag]) => {
   rep('alt="' + from + '"', 'alt="' + to + '"', 'P7 name alt ' + from);
 });
 // freshness tags in the year slot
-const TAGS = ['Counter-fresh', 'Farm-raised', 'Same-day', 'Marinated', 'Family pack', 'Catering'];
+const TAGS = ['3 days', '4 weeks', 'Turnkey', '30% savings', 'Meat birds', 'Flexible'];
 let tagN = 0;
 html = html.replace(/(<span class="ProjectItem-module__zYQwxW__year"[^>]*>)[^<]*(<\/span>)/g, (m, a, b) => a + TAGS[Math.min(tagN++, TAGS.length - 1)] + b);
 log.push('P7 year tags x' + tagN);
@@ -174,21 +174,21 @@ let typN = 0;
 html = html.replace(/(<div class="ProjectItem-module__zYQwxW__type"[^>]*>)[^<]*(<\/div>)/g, (m, a, b) => a + TYPES[Math.min(typN++, TYPES.length - 1)] + b);
 log.push('P7 types x' + typN);
 let locN = 0;
-html = html.replace(/(<div class="ProjectItem-module__zYQwxW__location"[^>]*>)[^<]*(<\/div>)/g, (m, a, b) => { locN++; return a + 'Bole, Addis Ababa' + b; });
+html = html.replace(/(<div class="ProjectItem-module__zYQwxW__location"[^>]*>)[^<]*(<\/div>)/g, (m, a, b) => { locN++; return a + 'Addis Ababa, Ethiopia' + b; });
 log.push('P7 locations x' + locN);
 
 // ============================ P8 — process section ============================
-rep('>NUESTRO<', '>FROM<', 'P8 proc title A');
-rep('>PROCESO<', '>FARM TO TABLE<', 'P8 proc title B');
-rep('>DISEÑO<', '>RAISE<', 'P8 step 1a');
-rep('>INTERIORISMO<', '>PROCESS<', 'P8 step 2a');
-rep('>RENDERIZADO<', '>DELIVER<', 'P8 step 3a');
-rep('>DEFINICIÓN<', '>SERVE<', 'P8 step 4a');
-repOrdered(/>ARQUITECTÓNICO</g, (m, i) => ['>ON OUR FARM<', '>WITH CARE<', '>EVERY DAY<'][i % 3], 'P8 step arch x3');
-rep('>TÉCNICA<', '>AT THE COUNTER<', 'P8 step4b');
-repT('Aterriza el diseño en productos reales, marcas, referencias y fichas técnicas coherentes con el concepto aprobado.', 'Our chicks grow on our own farm (SW Poultry), get processed at FW Agro, and land fresh at the Bole counter — the same chain, end to end.', 'P8 step desc');
+rep('>NUESTRO<', '>FROM EMPTY<', 'P8 proc title A');
+rep('>PROCESO<', '>ROOM TO DAILY CRATES<', 'P8 proc title B');
+rep('>DISEÑO<', '>DIAGNOSTICS<', 'P8 step 1a');
+rep('>INTERIORISMO<', '>INFRASTRUCTURE<', 'P8 step 2a');
+rep('>RENDERIZADO<', '>FIELD TRAINING<', 'P8 step 3a');
+rep('>DEFINICIÓN<', '>LAUNCH<', 'P8 step 4a');
+repOrdered(/>ARQUITECTÓNICO</g, (m, i) => ['>SPACE & CLIMATE<', '>CAGE FABRICATION<', '>HANDS-ON<'][i % 3], 'P8 step arch x3');
+rep('>TÉCNICA<', '>EGG OFFTAKE<', 'P8 step4b');
+repT('Aterriza el diseño en productos reales, marcas, referencias y fichas técnicas coherentes con el concepto aprobado.', 'We evaluate your room, select the breed (Bovans Brown, Lohmann, or Sasso), build your 4-tier unit, train your hands, and connect the egg offtake — one pathway, end to end.', 'P8 step desc');
 // process image alts
-repOrdered(/alt="Paso 0\d:[^"]*"/g, (m, i) => 'alt="Step 0' + (i + 1) + ': ' + ['Raise on our farm', 'Process at FW Agro', 'Deliver fresh daily', 'Serve at Bole'][Math.min(i, 3)] + '"', 'P8 step alts');
+repOrdered(/alt="Paso 0\d:[^"]*"/g, (m, i) => 'alt="Step 0' + (i + 1) + ': ' + ['Room + breed diagnostics', 'Cage fabrication', 'Hands-on apprenticeship', 'Placement + offtake'][Math.min(i, 3)] + '"', 'P8 step alts');
 
 // ============================ P9 — press -> stories ============================
 rep('>PRENSA<', '>STORIES<', 'P9 press title');
@@ -196,26 +196,26 @@ repT('Explora todos los artículos', 'See all stories', 'P9 press cta');
 repT('Lee el artículo completo', 'Read the story', 'P9 press read');
 repT('REVISTA', 'FRESH', 'P9 press mag A');
 repT('SIGNATURE', 'NOTES', 'P9 press mag B');
-repT('TARQ Studio: Del oficio artesanal a la arquitectura internacional', 'From one small farm to Addis tables: the vertical-integration story', 'P9 press lead');
-repT('Digital Edition', 'Behind the counter', 'P9 press tag digital');
-repT('Septiembre, 2026', 'Bole, Addis Ababa', 'P9 press tag sep');
+repT('TARQ Studio: Del oficio artesanal a la arquitectura internacional', 'From one batch to 91% peak laying: the Bishoftu story', 'P9 press lead');
+repT('Digital Edition', 'Verified producer', 'P9 press tag digital');
+repT('Septiembre, 2026', 'Bishoftu / Debre Zeit', 'P9 press tag sep');
 repT('MÉXICO', 'ADDIS ABABA', 'P9 press mx');
 repT('LATINOAMÉRICA', 'ETHIOPIA', 'P9 press la');
-repT('Mayo, 2026', 'This week', 'P9 press mayo');
+repT('Mayo, 2026', '400 layers', 'P9 press mayo');
 repT('PREMIO', 'FRESH', 'P9 press premio');
 repT('EXTRAORDINARIO', 'DAILY', 'P9 press extra');
 repT('ÁNGELES', 'ADDIS', 'P9 press angeles');
 repT('BARBERÍA', 'CHICKEN', 'P9 press barberia');
 repT('CASA', 'AT', 'P9 press casa');
 repT('DECOR', 'BOLE', 'P9 press decor');
-repT('Casa Decor 2026 x Dos Latitudes', 'Addis Chicken — Bole, Addis Ababa', 'P9 press casadecor text');
-repT('Awards & Distinctions', 'Freshness, Certified', 'P9 press awards');
+repT('Casa Decor 2026 x Dos Latitudes', 'Dawit Mengistu — 91% peak laying', 'P9 press casadecor text');
+repT('Awards & Distinctions', 'Flock: 400 layers, 4-tier unit', 'P9 press awards');
 // press excerpts (inert spans, but content must still be on-brand)
 let exiI = 0;
 function exi() { return Math.min(exiI++, 1); }
-repOrdered(/(<(?:span|div|p) class="Press-module__[\w-]+__excerpt[^"]*"[^>]*>)[\s\S]*?(<\/(?:span|div|p)>)/g, (m, i, a, b) => a + ['Every bird starts as a day-old chick on our farm, gets processed at our own plant, and arrives fresh at the Bole counter.', 'No importers. No cold storage for weeks. Just one chain we run end to end — so you always know what is on your plate.'][exi()] + b, 'P9 press excerpts');
+repOrdered(/(<(?:span|div|p) class="Press-module__[\w-]+__excerpt[^"]*"[^>]*>)[\s\S]*?(<\/(?:span|div|p)>)/g, (m, i, a, b) => a + ['Before the training, we lost over 15% of chicks to temperature swings and water vaccine errors. After adopting their brooding checklist and installing a 4-tier cage unit, mortality dropped to 2% — and we collect 11 crates of clean eggs every single morning.', '400 layers on a 4-tier unit with a 91% peak laying rate — verified producer in the Addis network.'][exi()] + b, 'P9 press excerpts');
 // press + hero long alt copies
-repRe(/alt="[^"]*Dos Latitudes[^"]*"/g, () => 'alt="Addis Chicken — Bole, Addis Ababa"', 'P9 press alt sweep');
+repRe(/alt="[^"]*Dos Latitudes[^"]*"/g, () => 'alt="Dawit Mengistu — 91% peak laying"', 'P9 press alt sweep');
 repRe(/alt="TARQ Studio: Del oficio artesanal[^"]*"/g, () => 'alt="From one farm to Addis tables"', 'P9 press title alts');
 // press outbound links -> brand socials
 repRe(/href="https:\/\/revistasignature\.pe[^"]*"/g, () => 'href="https://www.instagram.com/addis_chicken/"', 'P9 signature link');
@@ -224,30 +224,30 @@ repRe(/href="https:\/\/www\.instagram\.com\/p\/[^"]*"/g, () => 'href="https://ww
 
 // press sideAfter zones (secondary card text layers, pre-hover content)
 const ZONES = ['sideAfterTitle', 'sideAfterDescription', 'sideAfterPublisher', 'sideAfterDate', 'sideAfterLink'];
-const ZCOPY = ['Addis Chicken at the Bole counter', 'A vertically integrated poultry house: our farm, our processing, our counter.', 'Addis Chicken', 'This week', 'Read the story'];
+const ZCOPY = ['Dawit Mengistu, Bishoftu', 'Before the training, we lost over 15% of chicks. After adopting their brooding checklist and installing a 4-tier cage unit, mortality dropped to 2% — and we collect 11 crates of clean eggs every single morning.', 'Dawit Mengistu', '400 layers', 'Read the story'];
 ZONES.forEach((z, k) => {
   repOrdered(new RegExp('(<(?:span|div|p)[^>]*class="Press-module__x93a8W__' + z + '"[^>]*>)[\s\S]*?(<\/(?:span|div|p)>)', 'g'), (m, i, a, b) => a + ZCOPY[k] + b, 'P9 zone ' + z);
 });
 // curly-quoted Dos Latitudes title anywhere left (decorative)
-repRe(/>\s*\.\.\.En pleno corazón de Madrid[\s\S]*?Casa Decor 2026\.\.\.</g, () => '>Fresh chicken, every week.<', 'P9 curly doslatitudes span');
+repRe(/>\s*\.\.\.En pleno corazón de Madrid[\s\S]*?Casa Decor 2026\.\.\.</g, () => '>11 crates of clean eggs, every morning.<', 'P9 curly doslatitudes span');
 // the big sideAfterTitle card bodies might also exist without the lead excerpt: sweep leftover long-copy paragraphs (Spanish)
-repRe(/(<p class="Press-module__x93a8W__[^"]*"[^>]*>)[^<]{60,}(<\/p>)/g, (m, a, b) => a + 'From our farm through FW Agro to the Bole counter, every bird is tracked fresh.' + b, 'P9 press paragraph sweep');
+repRe(/(<p class="Press-module__x93a8W__[^"]*"[^>]*>)[^<]{60,}(<\/p>)/g, (m, a, b) => a + '400 layers on a 4-tier unit with a 91% peak laying rate — verified producer in the Addis network.' + b, 'P9 press paragraph sweep');
 
 // ============================ P10 — footer ============================
-repT('Arquitectura que piensa,', 'Good chicken is grown,', 'P10 footer title A');
-repT('cuestiona y propone.', 'processed, and served honestly.', 'P10 footer title B');
-repT('Ponte en contacto', 'Order or ask anything', 'P10 footer contact');
+repT('Arquitectura que piensa,', 'Profitable farms aren\'t luck.', 'P10 footer title A');
+repT('cuestiona y propone.', 'They are protocol.', 'P10 footer title B');
+repT('Ponte en contacto', 'Enroll or ask anything', 'P10 footer contact');
 repT('Enviar', 'Send', 'P10 footer send');
 repT('Compañía', 'The Brand', 'P10 footer col brand');
 repT('Social', 'Channels', 'P10 footer col social');
-rep('https://www.instagram.com/studiotarq/?hl=es', 'https://www.instagram.com/addis_chicken/', 'P10 footer ig link');
-rep('https://www.linkedin.com/company/tarqstudio/?originalSubdomain=co', 'https://www.facebook.com/AddisChicken', 'P10 footer li link');
-repT('LinkedIn', 'Facebook', 'P10 footer li label');
-repT('© TARQ Studio, All rights reserved, 2026', '© Addis Chicken. All rights reserved.', 'P10 footer copyright');
+rep('https://www.instagram.com/studiotarq/?hl=es', 'https://t.me/mychickenaddis', 'P10 footer ig link');
+rep('https://www.linkedin.com/company/tarqstudio/?originalSubdomain=co', 'mailto:info@mychickenaddis.com', 'P10 footer li link');
+repT('LinkedIn', 'Email', 'P10 footer li label');
+repT('© TARQ Studio, All rights reserved, 2026', '© My Chicken Addis. All rights reserved.', 'P10 footer copyright');
 repT('@ Nea Studio', 'Addis Ababa', 'P10 footer credit');
 rep('https://neastudio.xyz', '#footer', 'P10 nea href');
 // the footer intro line (long text above contact)
-repT('Por estos motivos y por ser un espacio que conjuga el diseño', 'Because when the brand owns the farm, the plant, and the counter —', 'P10 footer intro A');
+repT('Por estos motivos y por ser un espacio que conjuga el diseño', 'Because when the farm owns the protocol, the cage, and the feed —', 'P10 footer intro A');
 // the ES/EN language toggle: normalize ES link -> dead span, keep EN anchor harmless
 let langToggle = 0;
 html = html.replace(/<a class="(Navbar-module__[^"]*__langLink[^"]*)"[^>]*>(ES|EN)<\/a>/g, (m, cls, v) => { langToggle++; return v === 'EN' ? m : '<span class="' + cls + '">EN</span>'; });
@@ -315,9 +315,9 @@ const RUNTIME = `
   });
   // hero: next-item cycling (React gone, vanilla drives it)
   var slides = [
-    { tag: 'Fresh today', title: 'Crispy Legs & Thighs', img: 'assets/careerBox.jpg' },
-    { tag: 'Farm-raised', title: 'Whole Broilers', img: 'assets/social5.jpg' },
-    { tag: 'Family pack', title: 'Marinated Packs', img: 'assets/explore3.jpg' },
+    { tag: 'Next batch: open', title: 'Weekend Intensive', img: 'assets/careerBox.jpg' },
+    { tag: '4 weeks', title: 'Commercial Masterclass', img: 'assets/social5.jpg' },
+    { tag: 'Turnkey', title: '4-Tier Cage Setup', img: 'assets/explore3.jpg' },
   ];
   var idx = 0;
   var cur = document.querySelector('.hero-bg-current');
@@ -348,12 +348,12 @@ const RUNTIME = `
 html = html.replace(/<\/body>/, () => '\n  <script>' + RUNTIME + '\n  </script>\n</body>');
 
 // ============================ assertions + write ============
-const mustZero = [/TARQ/i, /tarqstudio/i, /Casa Decor/i, /Punta Mar/i, /Salesas/i, /Irimaka/i, /Makaira/i, /Casa NJ/i, /Bogotá/i, /Miami/i, /Interiorismo/i, /Nosotros/, /Proyectos/, /metricool/i, /_next\//, /neastudio/i, /awwwards/i, /Dos Latitudes/i, /PREMIO/, /EXTRAORDINARIO/, /ÁNGELES/, /BARBERÍA/, /MÉXICO/, /LATINOAMÉRICA/, /DISEÑO/, /INTERIORISMO\b/, /Arquitectura e interiorismo/];
+const mustZero = [/TARQ/i, /tarqstudio/i, /Casa Decor/i, /Punta Mar/i, /Salesas/i, /Irimaka/i, /Makaira/i, /Casa NJ/i, /Bogot\u00e1/i, /Miami/i, /Interiorismo/i, /Nosotros/, /Proyectos/, /metricool/i, /_next\//, /neastudio/i, /awwwards/i, /Dos Latitudes/i, /PREMIO/, /EXTRAORDINARIO/, /\u00c1NGELES/, /BARBER\u00cdA/, /M\u00c9XICO/, /LATINOAM\u00c9RICA/, /DISE\u00d1O/, /INTERIORISMO\b/, /Arquitectura e interiorismo/, /Crispy/, /Bole outlet/, /Bole, Addis/, /Order Fresh/, /SW Poultry/, /FW Agro/, /FARM TO TABLE/, /boiler/i, /fillet/i, /Addis Chicken/, /Good chicken/, /vertically integrated/i, /Order or ask anything/];
 const bad = [];
 mustZero.forEach(rx => { const m = html.match(rx); if (m) { const at = html.indexOf(m[0]); bad.push(rx.source + ' :: ' + JSON.stringify(html.slice(Math.max(0, at - 60), at + 90))); } });
 if (bad.length) { log.push('ASSERT FAIL x' + bad.length); bad.forEach(b => log.push('  LEFTOVER!! ' + b)); }
 else log.push('ASSERT: zero template leftovers');
-const mustHave = ['Addis Chicken', 'Farm-Fresh Poultry', 'Crispy Legs', 'Whole Broilers', 'Marinated Packs', 'Party Trays', 'FARM TO TABLE', 'one chain, all ours', 'SW Poultry', 'FW Agro', 'Bole Outlet', 'Order or ask anything', 'assets/careerBox.jpg', 'assets/discover1.jpg', 'data:font/ttf;base64', 'data:font/otf;base64', 'Fresh today'];
+const mustHave = ['My Chicken Addis', 'Modern & Profitable Poultry Farming', 'Weekend Intensive', 'Commercial Masterclass', '4-Tier Cage', 'Feed Formulation', 'FROM EMPTY', 'ROOM TO DAILY CRATES', 'DIAGNOSTICS', 'INFRASTRUCTURE', 'FIELD TRAINING', 'Bovans Brown', 'Dawit Mengistu', '91% peak laying', '11 crates', 'Megenagna', 'Next batch: open', 'Enroll Now', 'LAUNCH', 't.me/mychickenaddis', 'info@mychickenaddis.com', 'assets/careerBox.jpg', 'assets/discover1.jpg', 'data:font/ttf;base64', 'data:font/otf;base64'];
 const missing = mustHave.filter(x => !html.includes(x));
 if (missing.length) missing.forEach(x => log.push('MISSING marker: ' + x));
 log.push('MARKERS: ' + (mustHave.length - missing.length) + '/' + mustHave.length);
